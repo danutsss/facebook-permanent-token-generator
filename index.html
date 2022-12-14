@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Facebook Never-expiring Token</title>
+
+    <!-- Import stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <div id="formWrapper">
+        <h1>Facebook never-expiring token generator</h1>
+        <form id="generateTokenForm">
+            <label for="appId">
+                Application ID:
+                <input type="text" id="appId" name="appId" placeholder="Your applicationID" required />
+            </label>
+            <label for="appSecret">
+                Application secret:
+                <input type="text" id="appSecret" name="appSecret" placeholder="Your application secret" required />
+            </label>
+            <label for="userToken">
+                User access token:
+                <input type="text" id="userToken" name="userToken" placeholder="Your user access token" required />
+            </label>
+
+            <button type="submit">Generate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <!-- Import Axios -->
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- Import JavaScript functionality -->
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
