@@ -10,7 +10,7 @@ const generateToken = (e) => {
 	// Prevent the form from reloading the page.
 	e.preventDefault();
 
-	const API_URL = "https://graph.facebook.com/v15.0";
+	const API_URL = "https://graph.facebook.com/v17.0";
 	const APP_ID = appId.value;
 	const APP_SECRET = appSecret.value;
 	const USER_TOKEN = userToken.value;
